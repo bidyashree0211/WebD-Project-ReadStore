@@ -1,0 +1,508 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RED STORE</title>
+    <!-- Defining the link for external stylesheet -->
+
+    <link rel="stylesheet" href="style.css" />
+    
+    <!--incorporating google font poppins into file -->
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    /> 
+    <!-- icon reference of star incorporated from font awesome of ajax library -->
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">    <!--Defined the division class for all the parts of the website-->
+          <div class="logo">
+            <img src="images/logo.png" alt="logo" width="125px" />
+          </div>
+
+           <!--Navigation Menu for different purposes-->
+          <nav>
+           
+
+             <!--un-ordered-->
+            <ul id="MenuItems"> 
+              <li><a href="">Home</a></li>
+              <li><a href="">Products</a></li>
+              <li><a href="">About</a></li>
+              <li><a onclick="show2()">Log in</a></li>
+              <li><a onclick="show()">Sign up</a></li> 
+              <!--The function show() here implements the javascript for validation of name,phone-no and email-id-->
+            </ul>
+          </nav>
+            <!--Determining images for cart icon navigation menu icon-->
+          <img src="images/cart.png" alt="cart logo" id="cart" />
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div> 
+        
+        <!--Designing the header banner -->
+        <div class="row"> 
+          <div class="col-2">
+            <h1>
+              Your Apperance<br />
+              Shows Your Quality
+            </h1>
+            <p>
+              Mark the new experience of shopping, get the high qualiy products
+              from your favourite brand.
+            </p>
+            <a href="" class="btn">Explore Now &#10147;</a> <!--Designing a button for exploring the web page-->
+          </div>
+          <div class="col-2">
+            <img src="images/image1.png" alt="Banner" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Defining the featured products for the user with images-->
+    <!---------------- featured categories ---------------->
+    <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="images/category-1.jpg" />
+          </div>
+          <div class="col-3">
+            <img src="images/category-2.jpg" />
+          </div>
+          <div class="col-3">
+            <img src="images/category-3.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------------- featured products ---------------->
+
+    <div class="small-container">
+      <h2 class="title">Featured Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="images/product-1.jpg" />
+          <h4>Red Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>₹600.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/product-2.jpg" />
+          <h4>Sport Shoes</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>₹650.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/product-3.jpg" />
+          <h4>Jeans For Men</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p><strong>₹500.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/product-4.jpg" />
+          <h4>Blue T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>₹520.00</strong></p>
+        </div>
+      </div>
+
+      <h2 class="title">Recently Added Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="images/product-5.jpg" />
+          <h4>Sport Shoes</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>₹600.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/product-6.jpg" />
+          <h4>Black Printed T-Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>₹650.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/product-7.jpg" />
+          <h4>Sport Socks</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p><strong>₹500.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/product-8.jpg" />
+          <h4>Black Watch</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>₹520.00</strong></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <img src="images/product-9.jpg" />
+          <h4>Watch</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>₹600.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/product-10.jpg" />
+          <h4>Sport Shoes</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>₹650.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/product-11.jpg" />
+          <h4>Sport Shoes</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p><strong>₹500.00</strong></p>
+        </div>
+        <div class="col-4">
+          <img src="images/product-12.jpg" />
+          <h4>Track Pant</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p><strong>₹520.00</strong></p>
+        </div>
+      </div>
+    </div>
+    <!--A banner for the product on which special offer is implemented-->
+    <!------------------ offer ------------->
+
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img src="images/exclusive.png" class="offer-image" />
+          </div>
+          <div class="col-2">
+            <p>Exclusively Available On RedStore</p>
+            <h1>Smart Band 4</h1>
+            <small>The Mi Smart Band 4 Features a 39.9% larger (Than Mi Band 3)
+              AMOLED color full-touch display with adjustable brightness, so
+              everything is clear as can be. </small
+            ><br />
+            <br>
+            <p style="font-size:28px;"><b>₹1200.00 &nbsp;&nbsp;</b> <b id="cut">₹3000.00</b></p></div>
+            <a href="" class="btn">Buy Now &#10141;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Reviews by Customers after shopping from Red Store-->
+    <!-- --------testimonial -->
+    <div class="testimonial">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <i class="fas fa-quote-left"></i>
+            <p style="font-size: 12px; margin: 12px 0; color: #777">
+              I recently made a purchase from Red Store, and I must say that I'm extremely satisfied with my experience. The website was user-friendly, making it easy for me to find the product I was looking for. The ordering process was smooth, and I received regular email updates regarding the status of my order.
+            </p>
+
+            <img src="images/user-1.jpg" />
+            <h3>Dr. Adesh Pandey</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="col-3">
+            <i class="fas fa-quote-left"></i>
+            <p style="font-size: 12px; margin: 12px 0; color: #777">
+              My experience with Red Store E-commerce was exceptional. The customer service was top-notch, the shipping was fast, and the product exceeded my expectations. I highly recommend this website to anyone looking for a reliable and efficient e-commerce platform.
+            </p>
+
+            <img src="images/user-2.jpg" />
+            <h3>Dr. Vikas Goel</h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="col-3">
+            <i class="fas fa-quote-left"></i>
+            <p style="font-size: 12px; margin: 12px 0; color: #777">
+              What I appreciated the most about Red Store was their attention to detail. They kept me informed about the status of my order throughout the entire process, from the initial purchase to the final delivery. This level of communication gave me peace of mind and made me confident in their service.
+            </p>
+
+            <img src="images/user-3.jpg" />
+            <h3>Dr.Jeetendra Kumar Seth </h3>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Representing Brands and their products-->
+    <!-- -------------brands----------- -->
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <img src="images/logo-godrej.png" />
+          </div>
+          <div class="col-5">
+            <img src="images/logo-oppo.png" />
+          </div>
+          <div class="col-5">
+            <img src="images/logo-coca-cola.png" />
+          </div>
+          <div class="col-5">
+            <img src="images/logo-paypal.png" />
+          </div>
+          <div class="col-5">
+            <img src="images/logo-philips.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------footer---------->
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" />
+              <img src="images/app-store.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo-white.png" />
+            <p>
+              Our Purpose is to sustainably make the pleasure and benefits of
+              sports accessible to the many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+            </ul>
+            <ul class="links">
+              <li>
+                <a
+                  href="refundpolicy.html"
+                  target="_blank"
+                  >Refund Policy</a>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us On LinkedIn</h3>
+            <ul class="links">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/bidyashree-nayak-b8a933241/"
+                  target="_blank"
+                  >Bidyashree Nayak</a>
+                <br>
+                <a
+                  href="https://www.linkedin.com/in/devansh-kumar-2oo2"
+                  target="_blank"
+                  >Devansh Kumar</a>
+                <br>
+                <a
+                  href="https://www.linkedin.com/in/naina-garg-443ab9255"
+                  target="_blank"
+                  >Naina Garg</a>
+                
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">WebD Project</p>
+      </div>
+    </div>
+
+    <!-- ---------------------Sign up ------------- -->
+    <div id="sign">
+      <div class="inp">
+        <div class="head">
+          <b><center>Create an account</center></b>
+        </div>
+
+        <input type="text" id="name"placeholder="Name" />
+        <input type="text" id="phno"placeholder="Contact No." />
+        <input type="text" id ="email" placeholder="Email" />
+        <select name="address" id="add">
+          <option value="Choose">State</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="UP">Uttar Pradesh</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Kolkata">Kolkata</option>
+        </select>
+        <select name="gender" id="gen">
+          <option value="Choose">Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          </select>
+        <div class="btnn">
+          <a onclick="validate()" href="index.html"class="btn"><center>Sign In</center></a>
+          <a onclick="cancel()" class="btn"><center>Cancel</center></a>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- ---------------------Log in ------------- -->
+    <div id="log">
+      <div class="inp">
+        <div class="head">
+          <b><center>Log in</center></b>
+        </div>
+
+        <input type="text" id="name"placeholder="Username" />
+        <input type="text" id="pass"placeholder="Password" />
+
+        <div class="btnn">
+          <a onclick="validate()" href="index.html"class="btn"><center>Log In</center></a>
+          <a onclick="cancel()" class="btn"><center>Cancel</center></a>
+        </div>
+      </div>
+    </div>
+ 
+
+    <!-- ---------------------Javascipt For Menu Toggle------------- -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+      function show2() {
+        document.getElementById("log").style.display = "block";
+
+      }
+      function show() {
+        document.getElementById("sign").style.display = "block";
+
+      }
+      
+        
+
+      
+      function cancel() {
+        document.getElementById("log").style.display = "none";
+        document.getElementById("sign").style.display = "none";
+      }
+      function validate(){
+        var em=document.getElementById("email").value;
+        var na=document.getElementById("name").value;
+        var pn=document.getElementById("phno").value;
+        var a=document.getElementById("add").value;
+        var pass=document.getElementById("pass").value;
+
+
+        if(em=="" || na=="" || pn=="" || add=="" || gen=="" || pass==""){
+          alert("Fill all the fields");
+        }
+        else if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(em)==false || /^[a-zA-Z ]+$/.test(na)==false || /^(\()?\d{3}(\))?\d{3}\d{4}$/.test(pn)==false){
+           alert("Please enter your valid details");
+        }
+      
+            
+
+      }
+
+    </script>
+  </body>
+</html>
